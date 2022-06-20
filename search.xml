@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>hexo同时部署到GitHub和Gitee</title>
+      <link href="/2022/06/20/hexo-deploy/"/>
+      <url>/2022/06/20/hexo-deploy/</url>
+      
+        <content type="html"><![CDATA[<p>hexo同时部署到GitHub和Gitee</p><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><h3 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h3><p>仓库名务必是用户名.github.io<br>如下图红色框里的都是用户名<br><img src="/2022/06/20/hexo-deploy/github.png"></p><h3 id="创建Gitee仓库"><a href="#创建Gitee仓库" class="headerlink" title="创建Gitee仓库"></a>创建Gitee仓库</h3><p>仓库名务必是个人空间地址名,个人空间地址名在设置–&gt;个人资料,如下图<br><img src="/2022/06/20/hexo-deploy/gitee.png"></p><p>只有按照以上规则命名才能将博客更方便的同时部署到GitHub和Gitee!!!</p><h2 id="设置hexo-deploy"><a href="#设置hexo-deploy" class="headerlink" title="设置hexo deploy"></a>设置hexo deploy</h2><p>打开博客根目录的_config.yml</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">deploy:  type: git  repo:     gitee: https:&#x2F;&#x2F;gitee.com&#x2F;个人空间地址名&#x2F;个人空间地址名.git    github: https:&#x2F;&#x2F;github.com&#x2F;用户名&#x2F;用户名.github.io.git  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo cleanhexo ghexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 部署 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客代码块显示异常</title>
       <link href="/2022/06/20/hexo-issue/"/>
       <url>/2022/06/20/hexo-issue/</url>
@@ -13,14 +38,14 @@
       
       <categories>
           
-          <category> 博客 </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> 异常或报错 </tag>
             
         </tags>
       
