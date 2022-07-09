@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Angular–i18n : ngx-translate在constants中的使用, Olga">
+    <meta name="keywords" content="Angular–i18n : ngx-translate的应用, Olga">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Angular–i18n : ngx-translate在constants中的使用 | Olga</title>
+    <title>Angular–i18n : ngx-translate的应用 | Olga</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Angular–i18n : ngx-translate在constants中的使用</h1>
+                    <h1 class="description center-align post-title">Angular–i18n : ngx-translate的应用</h1>
                 </div>
             </div>
         </div>
@@ -470,14 +470,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    264
+                    363
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -500,8 +500,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>HTML中for循环constants中的数据,如何进行translate?</p>
-<h2 id="Angular–i18n-ngx-translate在constants中的使用"><a href="#Angular–i18n-ngx-translate在constants中的使用" class="headerlink" title="Angular–i18n : ngx-translate在constants中的使用"></a>Angular–i18n : ngx-translate在constants中的使用</h2><h3 id="Before"><a href="#Before" class="headerlink" title="Before"></a>Before</h3><p>constants.ts</p>
+                <h1 id="translate在angular中的应用"><a href="#translate在angular中的应用" class="headerlink" title="translate在angular中的应用"></a>translate在angular中的应用</h1><h2 id="translate常量在HTML中的应用"><a href="#translate常量在HTML中的应用" class="headerlink" title="translate常量在HTML中的应用"></a>translate常量在HTML中的应用</h2><p>component.html</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">&#123;&#123; &#39;常量&#39; | translate &#125;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="translate变量在HTML中的应用"><a href="#translate变量在HTML中的应用" class="headerlink" title="translate变量在HTML中的应用"></a>translate变量在HTML中的应用</h2><p>component.html</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">&#123;&#123; 变量名 | translate &#125;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="translate在constants中的使用"><a href="#translate在constants中的使用" class="headerlink" title="translate在constants中的使用"></a>translate在constants中的使用</h2><h3 id="Before"><a href="#Before" class="headerlink" title="Before"></a>Before</h3><p>constants.ts</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">export const INVOICES_APPLICYION_ITEMS: FormItem[] &#x3D; [
   &#123; text: &#39;区域&#39;, value: &quot;area&quot;, style: &quot;&quot; &#125;,
   &#123; text: &#39;建筑名称&#39;, value: &quot;building&quot;, style: &quot;&quot; &#125;,
@@ -548,6 +552,28 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>content-name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>start<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>*<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>&#123;&#123; item.text | translate &#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-list-item</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-list</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="translate在component-ts中的使用"><a href="#translate在component-ts中的使用" class="headerlink" title="translate在component.ts中的使用"></a>translate在component.ts中的使用</h2><p>i18N–&gt;en.json</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json">&#123;
+  &quot;Area&quot;: &quot;Area&quot;,
+  &quot;Building&quot;: &quot;Building&quot;,
+  &quot;Floor&quot;: &quot;Floor&quot;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>i18N–&gt;zh.json</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json">&#123;
+  &quot;Area&quot;: &quot;区域&quot;,
+  &quot;Building&quot;: &quot;建筑名称&quot;,
+  &quot;Floor&quot;: &quot;楼层&quot;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>component.ts</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">area &#x3D; this.translateService.instant(&#39;Area&#39;);
+constructor(
+  private translateService:TranslateService
+) &#123; &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
                 
             </div>
             <hr/>
@@ -791,9 +817,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Angular–i18n : ngx-translate在constants中的使用">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Angular–i18n : ngx-translate的应用">
                         
-                        <span class="card-title">Angular–i18n : ngx-translate在constants中的使用</span>
+                        <span class="card-title">Angular–i18n : ngx-translate的应用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1063,7 +1089,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">572</span>&nbsp;字
+                class="white-color">671</span>&nbsp;字
             
             
             
