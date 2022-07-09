@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo同时部署到GitHub和Gitee, Olga">
+    <meta name="keywords" content="Angular–i18n : ngx-translate在constants中的使用, Olga">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo同时部署到GitHub和Gitee | Olga</title>
+    <title>Angular–i18n : ngx-translate在constants中的使用 | Olga</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo同时部署到GitHub和Gitee</h1>
+                    <h1 class="description center-align post-title">Angular–i18n : ngx-translate在constants中的使用</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +431,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%83%A8%E7%BD%B2/">
-                                <span class="chip bg-color">部署</span>
+                            <a href="/tags/leaning/">
+                                <span class="chip bg-color">leaning</span>
                             </a>
                         
                     </div>
@@ -443,8 +443,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/hexo/" class="post-category">
-                                hexo
+                            <a href="/categories/angular/" class="post-category">
+                                angular
                             </a>
                         
                     </div>
@@ -456,21 +456,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-20
+                    2022-07-09
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-06-21
+                    2022-07-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    170
+                    264
                 </div>
                 
 
@@ -500,21 +500,54 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>hexo同时部署到GitHub和Gitee</p>
-<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><h3 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h3><p>仓库名务必是用户名.github.io<br>如下图红色框里的都是用户名<br><img src="/images/github-deploy.png"></p>
-<h3 id="创建Gitee仓库"><a href="#创建Gitee仓库" class="headerlink" title="创建Gitee仓库"></a>创建Gitee仓库</h3><p>仓库名务必是个人空间地址名,个人空间地址名在设置–个人资料,如下图<br><img src="/images/gitee-deploy.png"></p>
-<p>只有按照以上规则命名才能将博客更方便的同时部署到GitHub和Gitee!!!</p>
-<h2 id="设置hexo-deploy"><a href="#设置hexo-deploy" class="headerlink" title="设置hexo deploy"></a>设置hexo deploy</h2><p>打开博客根目录的_config.yml</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">deploy:
-  type: git
-  repo: 
-    gitee: https:&#x2F;&#x2F;gitee.com&#x2F;个人空间地址名&#x2F;个人空间地址名.git
-    github: https:&#x2F;&#x2F;github.com&#x2F;用户名&#x2F;用户名.github.io.git
-  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <p>HTML中for循环constants中的数据,如何进行translate?</p>
+<h2 id="Angular–i18n-ngx-translate在constants中的使用"><a href="#Angular–i18n-ngx-translate在constants中的使用" class="headerlink" title="Angular–i18n : ngx-translate在constants中的使用"></a>Angular–i18n : ngx-translate在constants中的使用</h2><h3 id="Before"><a href="#Before" class="headerlink" title="Before"></a>Before</h3><p>constants.ts</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">export const INVOICES_APPLICYION_ITEMS: FormItem[] &#x3D; [
+  &#123; text: &#39;区域&#39;, value: &quot;area&quot;, style: &quot;&quot; &#125;,
+  &#123; text: &#39;建筑名称&#39;, value: &quot;building&quot;, style: &quot;&quot; &#125;,
+  &#123; text: &#39;楼层&#39;, value: &quot;floor&quot;, style: &quot;&quot; &#125;
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h2><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">hexo clean
-hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>component.ts</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">formItems &#x3D; [...INVOICES_APPLICYION_ITEMS];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>component.html</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-list</span> <span class="token attr-name">nzBordered</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-list-item</span> <span class="token attr-name">*ngFor</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>let item of formItems<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>content-name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>start<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>*<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>&#123;&#123; item.text &#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-list-item</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-list</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="After"><a href="#After" class="headerlink" title="After"></a>After</h3><p>i18N–&gt;en.json</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json">&#123;
+  &quot;Area&quot;: &quot;Area&quot;,
+  &quot;Building&quot;: &quot;Building&quot;,
+  &quot;Floor&quot;: &quot;Floor&quot;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>i18N–&gt;zh.json</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json">&#123;
+  &quot;Area&quot;: &quot;区域&quot;,
+  &quot;Building&quot;: &quot;建筑名称&quot;,
+  &quot;Floor&quot;: &quot;楼层&quot;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>constants.ts</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">export const INVOICES_APPLICYION_ITEMS: FormItem[] &#x3D; [
+  &#123; text: &#39;Area&#39;, value: &quot;area&quot;, style: &quot;&quot; &#125;,
+  &#123; text: &#39;Building&#39;, value: &quot;building&quot;, style: &quot;&quot; &#125;,
+  &#123; text: &#39;Floor&#39;, value: &quot;floor&quot;, style: &quot;&quot; &#125;
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>component.ts</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">formItems &#x3D; [...INVOICES_APPLICYION_ITEMS];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>component.html</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-list</span> <span class="token attr-name">nzBordered</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-list-item</span> <span class="token attr-name">*ngFor</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>let item of formItems<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>content-name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>start<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>*<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>&#123;&#123; item.text | translate &#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-list-item</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-list</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -540,7 +573,7 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://olga77.gitee.io/2022/06/20/hexo-deploy/">https://olga77.gitee.io/2022/06/20/hexo-deploy/</a>
+                    <a href="https://olga77.gitee.io/2022/07/09/angular-translate/">https://olga77.gitee.io/2022/07/09/angular-translate/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -578,8 +611,8 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%83%A8%E7%BD%B2/">
-                                    <span class="chip bg-color">部署</span>
+                                <a href="/tags/leaning/">
+                                    <span class="chip bg-color">leaning</span>
                                 </a>
                             
                         </div>
@@ -749,9 +782,60 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/07/09/angular-translate/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Angular–i18n : ngx-translate在constants中的使用">
+                        
+                        <span class="card-title">Angular–i18n : ngx-translate在constants中的使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/angular/" class="post-category">
+                                    angular
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/leaning/">
+                        <span class="chip bg-color">leaning</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/07/08/hello-world/">
                     <div class="card-image">
@@ -769,9 +853,9 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -779,55 +863,6 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                             
                         </span>
                     </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/06/20/hexo-issue/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="博客代码块显示异常">
-                        
-                        <span class="card-title">博客代码块显示异常</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/hexo/" class="post-category">
-                                    hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%BC%82%E5%B8%B8%E6%88%96%E6%8A%A5%E9%94%99/">
-                        <span class="chip bg-color">异常或报错</span>
-                    </a>
-                    
                 </div>
                 
             </div>
