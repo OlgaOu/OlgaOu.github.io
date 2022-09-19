@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram id="fLY-Er5j3K5iIVzyELWy" name="第 1 页">
+        <mxGraphModel dx="990" dy="457" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Microsoft YaHei;fontSize=14;" edge="1" parent="1" source="2" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="复述\确认" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Microsoft YaHei;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;fontFamily=Microsoft YaHei;fontSize=14;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Microsoft YaHei;fontSize=14;" edge="1" parent="1" source="3" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Microsoft YaHei;fontSize=14;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="有效沟通" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Microsoft YaHei;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Microsoft YaHei;fontSize=14;" edge="1" parent="1" source="5" target="15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="建立平台,&lt;br style=&quot;font-size: 14px;&quot;&gt;产生默契" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Microsoft YaHei;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="1.须用对方理解的语言表达&lt;br style=&quot;font-size: 14px;&quot;&gt;2.为保证沟通者1的A=沟通者2的A,要进行复述确认A,复述不只是重复对方的话,而是要用自己的话自己的理解重新诠释.&lt;br style=&quot;font-size: 14px;&quot;&gt;重新诠释的好处:&lt;br style=&quot;font-size: 14px;&quot;&gt;1)以便对方更加确定沟通有效&lt;br style=&quot;font-size: 14px;&quot;&gt;2)用不同角度引导对方&lt;br style=&quot;font-size: 14px;&quot;&gt;3.确认.额外补充内容,对焦想法,确认自己的理解是否共通,得到对方的反馈" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Microsoft YaHei;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="135" width="450" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Microsoft YaHei;fontSize=14;" edge="1" parent="1" source="4" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="讯息清楚" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Microsoft YaHei;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="讯息要先过滤和整理,而不是流水账" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Microsoft YaHei;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="297.5" width="450" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="建立平台=找到共同点&lt;br style=&quot;font-size: 14px;&quot;&gt;共同越多,平台越广、越稳固&lt;br style=&quot;font-size: 14px;&quot;&gt;建立平台后,容易产生默契" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Microsoft YaHei;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="427.5" width="450" height="45" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
